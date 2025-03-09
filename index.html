@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <title>Profil Rizzi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: rebeccapurple;
+        }
+
+        header {
+            padding: 5px;
+            position: sticky;
+            top: 0;
+            background-color: #00a2c6;
+        }
+
+        header nav ul {
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px 20px;
+        }
+
+        header nav li {
+            list-style-type: none;
+        }
+
+        header nav li a {
+            padding: 0.5rem 1.5rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 500;
+            color: white;
+        }
+
+        header nav li:hover a {
+            background-color: green;
+            color: white;
+            /*font-size: 32px;*/
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        #content {
+            flex: 4;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 1rem 2rem;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        aside {
+            flex: 2;
+        }
+
+        .featured-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 90%;
+            max-width: 400px;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        button {
+            background-color: #425c77;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        footer {
+            padding: 20px;
+            color: white;
+            background-color: #00a2c6;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Ini untuk Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#pengalaman">Pengalaman</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#formulir">Formulir</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Ini penutup Header -->
+    <marquee>
+        <h1>Selamat Datang di Profil Saya</h1>
+    </marquee>
+    <main>
+        <div id="content">
+            <section class="card">
+                <img src="gambar.jpg" alt="gambar_profil" class="featured-image">
+                <h3>Mohammad Alfi Rizi</h3>
+                <p style="color: chartreuse;">Saya ada seorang lulusan Mahasiswa Politeknik Elektronika Negeri Surabaya
+                </p>
+            </section>
+
+            <section class="card">
+                <h3>Daftar Pengalaman / Proyek</h3>
+                <table border="1" cellpadding="10" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Proyek</th>
+                            <th>Deskripsi</th>
+                            <th>Tahun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Aplikasi Monitoring IoT</td>
+                            <td>Aplikasi untuk memantau suhu secara real-time</td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Website Jualan Online</td>
+                            <td>Membuat Toko Online</td>
+                            <td>2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="card">
+                <h3>Kontak Saya</h3>
+                <p>Email : <a href="mailto:mohammadalfirizzi@gmail.com">mohammadalfirizzi@gmail.com</a></p>
+                <p>Whatsapp : <a href="https://wa.me/" target="_blank">083832071086</a></p>
+            </section>
+        </div>
+        <aside>
+            <section class="card">
+                <h3>Formulir Kontak</h3>
+                <form action="" method="post">
+                    <label for="nama">Nama : </label><br>
+                    <input type="text" id="nama" name="nama" required><br><br>
+                    <label for="nama">Email : </label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="nama">Pesan : </label><br>
+                    <textarea name="pesan" id="pesan" rows="4" required></textarea><br><br>
+
+                    <button type="submit">Kirim</button>
+                </form>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <p>Curiculum Vitae by Rizzi &#169; 2025</p>
+    </footer>
+</body>
+
+</html>
