@@ -135,13 +135,13 @@
         <div id="content">
             <section class="card">
                 <img src="gambar.jpg" alt="gambar_profil" class="featured-image">
-                <h3>Mohammad Alfi Rizi</h3>
+                <h3>Mohammad Alfi Rizzi</h3>
                 <p style="color: chartreuse;">Saya ada seorang lulusan Mahasiswa Politeknik Elektronika Negeri Surabaya
                 </p>
             </section>
 
             <section class="card">
-                <h3>Daftar Pengalaman / Proyek</h3>
+                <h3>Daftar Pengalaman / Proyek Saya</h3>
                 <table border="1" cellpadding="10" cellspacing="0">
                     <thead>
                         <tr>
@@ -194,5 +194,20 @@
         <p>Curiculum Vitae by Rizzi &#169; 2025</p>
     </footer>
 </body>
+
+<script>
+    document.querySelector("form").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        let nama = document.getElementById("nama").value;
+        console.log(nama);
+        let email = document.getElementById("email").value;
+        console.log(email);
+        let pesan = document.getElementById("pesan").value;
+        console.log(pesan);
+
+        alert(`Terima kasih, ${nama}! Pesan Anda telah dikirim`);
+    });
+</script>
 
 </html>
